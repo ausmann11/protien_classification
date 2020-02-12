@@ -37,18 +37,18 @@ from keras.preprocessing.image import ImageDataGenerator
 ##
 
 # Ditylum
-image_directory_dit = "/Users/samanthacombs/Documents/Main/FAU/TRAIN/Ditylum/"
+image_directory_dit = "/Users/smann/Documents/Main/FAU/TRAIN/Ditylum/"
 img_list_dit = glob.glob(f"{image_directory_dit}*.tif")
 # NOT Ditylum
-image_directory_not_dit = "/Users/samanthacombs/Documents/Main/FAU/TRAIN/NotDitylum/"
+image_directory_not_dit = "/Users/smann/Documents/Main/FAU/TRAIN/NotDitylum/"
 img_list_not_dit = glob.glob(f"{image_directory_not_dit}*.tif")
 
 
 ##
 # Train/Test Split or Train/Validation/Test Split (pick 1)
 ##
-training_folder = "/Users/samanthacombs/Documents/Main/FAU/TRAIN/"
-output_folder = "/Users/samanthacombs/Documents/Main/FAU/TestTrain"
+training_folder = "/Users/smann/Documents/Main/FAU/TRAIN/"
+output_folder = "/Users/smann/Documents/Main/FAU/TestTrain"
 train_validation_test_split(training_folder, output_folder)
 train_test_split(training_folder, output_folder)
 
