@@ -23,22 +23,22 @@ from sklearn.decomposition import PCA
 # TIP: folder id is located at the end of the URL for the folder (https://app.box.com/folder/89393519067)
 # Ditylum
 folder_id_dit = "90416014352"
-output_directory_dit = "/Users/samanthacombs/Documents/Main/FAU/TRAIN/Ditylum/"
+output_directory_dit = "/Users/smann/Documents/Main/FAU/TRAIN/Ditylum/"
 download_images(folder_id_dit, output_directory_dit)
 # Not Ditylum
 folder_id_not_dit = "90415600905"
-output_directory_not_dit = "/Users/samanthacombs/Documents/Main/FAU/TRAIN/NotDitylum/"
+output_directory_not_dit = "/Users/smann/Documents/Main/FAU/TRAIN/NotDitylum/"
 download_images(folder_id_not_dit, output_directory_not_dit)
 
 ##
 # Create training set
 ##
 # Ditylum
-image_directory_dit = "/Users/samanthacombs/Documents/Main/FAU/TRAIN/Ditylum/"
+image_directory_dit = "/Users/smann/Documents/Main/FAU/TRAIN/Ditylum/"
 img_list_dit = glob.glob(f"{image_directory_dit}*.tif")
 # NOT Ditylum
-image_directory_not_dit = "/Users/samanthacombs/Documents/Main/FAU/TRAIN/NotDitylum/"
+image_directory_not_dit = "/Users/smann/Documents/Main/FAU/TRAIN/NotDitylum/"
 img_list_not_dit = glob.glob(f"{image_directory_not_dit}*.tif")
-training_output_directory = "/Users/samanthacombs/Documents/Main/FAU/TRAIN"
+training_output_directory = "/Users/smann/Documents/Main/FAU/TRAIN"
 training_set(img_list_dit, training_output_directory)
 training_set(img_list_not_dit, training_output_directory)
