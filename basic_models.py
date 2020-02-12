@@ -22,10 +22,10 @@ from skimage import data_dir
 # Create training set
 ##
 # Ditylum
-image_directory_dit = "/Users/samanthacombs/Documents/Main/FAU/TRAIN/Ditylum/"
+image_directory_dit = "/Users/smann/Documents/Main/FAU/TRAIN/Ditylum/"
 img_list_dit = glob.glob(f"{image_directory_dit}*.tif")
 # NOT Ditylum
-image_directory_not_dit = "/Users/samanthacombs/Documents/Main/FAU/TRAIN/NotDitylum/"
+image_directory_not_dit = "/Users/smann/Documents/Main/FAU/TRAIN/NotDitylum/"
 img_list_not_dit = glob.glob(f"{image_directory_not_dit}*.tif")
 
 ##
